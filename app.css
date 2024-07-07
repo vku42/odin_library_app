@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #0b1621;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.book-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a2733;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.book-card ul li {
+  width: 200px;
+  height: 300px;
+  background-color: #b1d6f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.book-info {
+  background-color: #023160ac;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.book-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0b1621;
+}
+
+.book-author {
+  font-size: 1em;
+  color: #333;
+}
+
+.book-pages {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.new_book {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #dc9fc3;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*  popup form for new book */
+/* Popup form styles */
+.popup-form {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #41456a;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
